@@ -47,7 +47,7 @@ function $translateCookieStorageFactory($injector) {
         return $cookies.get(key);
       },
       put : function (key, value) {
-        $cookies.put(key, value, {expires: new Date("Fri, 31 Dec 9999 23:59:59 GMT")});
+        $cookies.put(key, value, {expires: new Date()});
       }
     };
   } else {
