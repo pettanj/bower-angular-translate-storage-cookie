@@ -1,6 +1,6 @@
 /*!
  * angular-translate - v2.15.2 - 2017-06-22
- * 
+ *
  * Copyright (c) 2017 The angular-translate team, Pascal Precht; Licensed MIT
  */
 (function (root, factory) {
@@ -47,7 +47,7 @@ function $translateCookieStorageFactory($injector) {
         return $cookies.get(key);
       },
       put : function (key, value) {
-        $cookies.put(key, value);
+        $cookies.put(key, value, {expires: "Fri, 31 Dec 9999 23:59:59 GMT"});
       }
     };
   } else {
